@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "../styles/theme.css";
+
+/* 등장 효과는 쓰더라도 일부 섹션만, CSS 스크롤 기반으로 감싼다 */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal-on-scroll {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+
+@keyframes reveal {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}

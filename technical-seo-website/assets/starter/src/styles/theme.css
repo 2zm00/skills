@@ -1,0 +1,66 @@
+/*
+ * 디자인 토큰. 폰트, 컬러 팔레트(primary, secondary)는 필수, radius·shadow·height는 필요에 따라.
+ * 강조색은 하나만, 아껴서 쓴다(CTA 점·숫자 강조·페이지당 한 번의 전폭 띠). 그라데이션·빛 번짐 금지.
+ */
+@theme {
+  /* Font Family */
+  --font-sans: var(--font-pretendard), sans-serif;
+
+  /* Primary (브랜드 강조색) */
+  --color-primary-50: #f5f9fc;
+  --color-primary-100: #e9f1f8;
+  --color-primary-300: #b8cee3;
+  --color-primary-500: #5e89b2;
+  --color-primary-700: #234d78;
+  --color-primary-900: #173453;
+
+  /* Secondary (중립) */
+  --color-secondary-100: #f0ede9;
+  --color-secondary-300: #e2dcd3;
+  --color-secondary-500: #cbbfb2;
+  --color-secondary-700: #9a8876;
+  --color-secondary-900: #5a5047;
+
+  /* Static */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Semantic (종이·잉크·선) */
+  --color-paper: #f6f6f8;
+  --color-ink: #17171a;
+  --color-ink-soft: #47474d;
+  --color-ink-muted: #85858d;
+  --color-rule: #17171a; /* 1px 구분선 */
+  --color-line: #dcdbe1;
+
+  /* Radius (에디토리얼 방향이면 각진 모서리 위주로 작게) */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / 0.04);
+
+  /* Typography (lib/utils.ts의 font-size 그룹과 이름을 맞춘다) */
+  --text-display: 2.25rem;
+  --text-display--line-height: 1.25;
+  --text-title-1: 2rem;
+  --text-title-1--line-height: 1.35;
+  --text-title-2: 1.5rem;
+  --text-title-2--line-height: 1.4;
+  --text-heading-1: 1.25rem;
+  --text-heading-1--line-height: 1.45;
+  --text-heading-2: 1.125rem;
+  --text-heading-2--line-height: 1.5;
+  --text-body-1: 1rem;
+  --text-body-1--line-height: 1.6;
+  --text-body-1-reading: 1rem;
+  --text-body-1-reading--line-height: 1.8;
+  --text-body-2: 0.875rem;
+  --text-body-2--line-height: 1.6;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.5;
+
+  /* height */
+  --header-height-mobile: 60px;
+  --header-height-desktop: 80px;
+}
